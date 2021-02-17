@@ -1,0 +1,12 @@
+export const HttpCodes = {
+    OK: 200,
+    CREATED: 201,
+    ACCEPTED: 202,
+    RATE_LIMIT : 204,
+    UNAUTHORIZE: 401,
+    ERROR: 500,
+    NOT_FOUND: 404,
+    FORBIDDEN: 403,
+    BAD_REQUEST: 400,
+    UNPROCESSABLE_ENTITY: 422
+}

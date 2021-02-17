@@ -1,0 +1,23 @@
+{
+	"name": "micro-services-example",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "npm run kill:allProcess && npm run start:server1 && npm run start:server2 && npm run start:pm2 && npm run info",
+		"start:pm2": "pm2 start ecosystem.config.js --update-env",
+		"start:dev": "node dist/index.js",
+		"kill:allProcess": "pm2 kill",
+		"build": "rimraf ./dist && tsc",
+		"info": "pm2 logs",
+		"start:server1": "cd ./server1 && npm install && cd ..",
+		"start:server2": "cd ./server2 && npm install && cd ..",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/orelmoshe/micro-services-example.git"
+	},
+	"author": "orelmoshe",
+	"license": "ISC"
+}

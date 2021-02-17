@@ -1,0 +1,16 @@
+{
+	"name": "apiGateway",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "orel-moshe",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"http-proxy": "^1.18.1"
+	}
+}
